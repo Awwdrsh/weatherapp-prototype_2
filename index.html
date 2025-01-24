@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="https://uxwing.com/wp-content/themes/uxwing/download/weather/weather-icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #ref{
+            position: absolute;
+            top: 3%;
+            left: 3%;
+        }
+        .bxl-soundcloud{
+            color: white;
+            text-shadow: 0 0 10px rgb(255, 255, 255);
+            font-size: 40px;
+            border: 1px solid white;
+            border-radius: 30px;
+        }
+        .bxl-soundcloud:hover{
+            background-color: white;
+            text-shadow: 0 0 20px #2b2525;
+            box-shadow: 0 0 20px white;
+            color: #2b2525;  
+        }
+    </style>
+</head>
+<body>
+    <header id="ref">
+        <a href="index.html"><i class='bx bxl-soundcloud'></i></a>
+    </header>
+    <div class="main-container">
+        <header class="search-container">
+            <input class="search-box" placeholder="Search CITY" type="text" name="search-box"><br>
+            <button class="search-btn">
+                <i class='bx bx-search'></i>
+            </button>
+        </header>
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <i class='bx bx-current-location'></i>
+                    <h6 class="country-txt"></h6>
+                </div>
+                <h6 class="current-date"></h6>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h2 class="temp-txt"></h2>
+                    <h3 class="main-weather-condition"></h3>
+                    <h5 class="description-condition-txt"></h5>
+                </div>
+            </div>
+
+            <div class="weather-condition-container">
+                <div class="condition-item">
+                    <div class="hp-sign">
+                    <i class='bx bxs-droplet'></i>
+                    <i class='bx bx-bar-chart-alt'></i>
+                    </div>
+                        <div class="condition-item-info">
+                        <h6 class="condition">humidity</h6>
+                        <h6 class="humidity-value"></h6>
+                        <h6 class="condition">Pressure</h6>
+                        <h6 class="pressure-value"></h6>
+                        </div>
+                </div>
+                <div class="condition-item">
+                    <i class='bx bx-wind'></i>
+                        <div class="condition-item-info">
+                        <h6 class="condition">Wind speed/ direction</h6>
+                        <h6 class="wind-value"></h6>
+                        <h6 class="wind-direction"></h6>
+                        </div>
+                </div>
+            </div>
+
+            <div class="forecast-item-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date"></h5>
+                    <img src="" alt="pix" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date"></h5>
+                    <img src="" alt="pix" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date"></h5>
+                    <img src="" alt="pix" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date"></h5>
+                    <img src="" alt="pix" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date"></h5>
+                    <img src="" alt="pix" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+            </div>
+        </section>
+        <section class="search-city section-message">
+            <div>
+                <h1>Search city</h1>
+                <h4>Search the weather of specific city</h4>
+            </div>
+        </section>
+        <section class="not-found section-message" style="display: none;">
+            <div>
+                <h1>City not found </h1>
+                <h4>Try specific city or another name</h4>
+            </div>
+        </section>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
