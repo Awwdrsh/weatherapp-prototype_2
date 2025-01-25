@@ -50,7 +50,7 @@ $result = mysqli_query($conn, $selectAllData);
 
 if (mysqli_num_rows($result) == 0) {
     // Fetch data from the OpenWeatherMap API
-    $apiKey = 'c1cc05219aaf07f2289681e011217fe5';
+    $apiKey = 'e2e60815257cebfaf1e7b74e7e6db6d1';
     $url = "https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric";
     
     // Use cURL to fetch data from OpenWeatherMap API
